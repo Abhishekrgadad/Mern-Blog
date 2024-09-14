@@ -37,8 +37,8 @@ if(!validUser){
     }
 
     const token = jwt.sign(
-        {id : validUser._id},
-
+        {id : validUser._id}
+        
     )
 }
 }catch(error){
