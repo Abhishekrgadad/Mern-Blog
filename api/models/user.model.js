@@ -17,6 +17,10 @@ const userSchema = new mongoose.Schema({
         required:true,
 
     },
+    profilePicture:{
+        type:String,
+        default:'get a default image url and paste it here',
+    },
 },{timestamps:true}
     
 );
