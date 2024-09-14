@@ -35,6 +35,11 @@ if(!validUser){
     if(!validPassword){
         next(errorHandler(400,'Invalid Password'));
     }
+
+    const token = jwt.sign(
+        {id : validUser._id},
+
+    )
 }
 }catch(error){
     next.error;
